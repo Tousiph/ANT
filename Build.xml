@@ -10,11 +10,11 @@
         <javac srcdir="src" destdir="build"/>
     </target>
 
-    <target name="install">
+    <target name="install" depends="compile">
         <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/HelloWorld.jar" basedir="build/classes">
+        <jar destfile="build/jar/Hello.jar" basedir="build/classes">
             <manifest>
-                <attribute name="Main-Class" value="oata.HelloWorld"/>
+                <attribute name="Main-Class" value="Test.Hello"/>
             </manifest>
         </jar>
     </target>
