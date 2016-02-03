@@ -6,8 +6,8 @@
     </target>
 
     <target name="compile">
-        <mkdir dir="build"/>
-        <javac srcdir="src" destdir="build"/>
+        <mkdir dir="build/classes"/>
+        <javac srcdir="/src/Test" destdir="build/classes"/>
     </target>
 
     <target name="install" depends="compile">
